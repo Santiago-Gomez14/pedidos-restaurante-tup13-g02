@@ -71,6 +71,39 @@ Desde la carpeta que contiene `requerimientos.txt`, ejecutá:
 
 Los resultados esperados son `Python 3.14.7` y `5.2.19`, respectivamente.
 
+## Trabajo con Git
+
+Cada integrante trabaja en una rama con su nombre y apellido, en minúsculas,
+sin espacios y separados por un guion. Por ejemplo, `santiago-gomez`.
+
+### Crear tu rama por primera vez
+
+Después de clonar el repositorio y antes de editar archivos, ejecutá:
+
+```powershell
+git switch main
+git pull --ff-only
+git switch -c nombre-apellido
+git branch --show-current
+```
+
+Reemplazá `nombre-apellido` por tus datos. Los dos primeros comandos
+te ubican en `main` y la actualizan con los cambios de GitHub. El tercero
+crea tu rama y te cambia a ella. El último confirma en qué rama estás.
+
+Si tu rama ya existe en tu computadora, entrá con `git switch nombre-apellido`.
+
+### Compartir tus cambios
+
+Después de hacer el primer commit en tu rama, subila a GitHub:
+
+```powershell
+git push -u origin nombre-apellido
+```
+
+Cuando el cambio esté listo para revisar, abrí un pull request desde tu rama
+hacia `main`.
+
 ## Ejecutar el proyecto
 
 Una vez que `manage.py` esté incorporado al repositorio, ejecutá estos comandos desde la carpeta que lo contiene:
