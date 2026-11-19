@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mesas.apps.MesasConfig',
+    'platos.apps.PlatosConfig',
+    'pedidos.apps.PedidosConfig',
 ]
 
 MIDDLEWARE = [
